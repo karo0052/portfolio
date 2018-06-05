@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(212, 219, 217)
+}
+
+/*menu*/
+
+.menu {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 6vw;
+    z-index: 0;
+    top: 6vw;
+}
+
+.navn {
+    font-family: 'Poiret One', cursive;
+    color: rgb(48, 48, 48);
+    font-size: 3em;
+    font-weight: 900;
+    position: absolute;
+    top: 0.5vw;
+}
+
+.menu_indhold {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+/*baggrund*/
+
+.lag {
+    background-color: #294a41;
+    width: 100vw;
+    height: 56.6vw;
+    position: fixed;
+    z-index: -3;
+}
+
+.lag1 {
+    background-size: 100.7%;
+    background-image: url(assets/home_lag1.png);
+    width: 100vw;
+    height: 56.6vw;
+    top: 0vw;
+    position: fixed;
+    z-index: -2;
+}
+
+.lag2 {
+    background-size: 100%;
+    background-image: url(assets/home_lag2.png);
+    width: 100vw;
+    height: 56.7vw;
+    top: 10vw;
+    position: absolute;
+    z-index: -1;
+}
+
+/*home*/
+
+#home {
+    position: relative;
+}
+
+article {
+    position: absolute;
+    top: 65vw;
+    background-color: white;
+    width: 100%;
+}
+
+.boks {
+    top: 65vw;
+    background-color: white;
+}
+
+.home_indhold {
+    max-width: 85vw;
+    margin: 0 auto;
+}
