@@ -1,37 +1,85 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(212, 219, 217)
+    background-color: rgb(212, 219, 217);
+    font-family: 'Poiret One', cursive;
+}
+
+p {
+    margin: 0;
+    padding 0;
+}
+
+div.indhold {
+    max-width: 85wv;
+}
+
+.none {
+    visibility: hidden;
 }
 
 /*menu*/
 
-.menu {
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    height: 6vw;
-    z-index: 0;
-    top: 6vw;
+.filler {
+    height: 0vw;
 }
 
-.navn {
-    font-family: 'Poiret One', cursive;
-    color: rgb(48, 48, 48);
-    font-size: 3em;
-    font-weight: 900;
-    position: absolute;
-    top: 0.5vw;
+.filler2 {
+    height: 0vw;
 }
+
+.menu_alt {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    width: 100%;
+    /*    height: 6vw;*/
+    z-index: 20;
+    top: 0;
+    padding-bottom: 1vw;
+    padding-top: 0.6vw;
+}
+
 
 .menu_indhold {
     max-width: 85vw;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.menu {
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-left: 60px;
+    border-bottom: 0.5px solid transparent;
+}
+
+a.menu:hover {
+    border-color: rgb(218, 163, 158);
+}
+
+a.navn {
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-left: 5vw;
 }
 
 a {
     text-decoration: none;
     color: rgb(48, 48, 48);
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+.active {
+    color: rgb(218, 163, 158);
+}
+
+.desktop {
+    visibility: hidden;
+    height: 0;
 }
 
 /*baggrund*/
@@ -42,6 +90,7 @@ a {
     height: 56.6vw;
     position: fixed;
     z-index: -3;
+    top: 0vw;
 }
 
 .lag1 {
@@ -59,30 +108,415 @@ a {
     background-image: url(assets/home_lag2.png);
     width: 100vw;
     height: 56.7vw;
-    top: 10vw;
+    top: 6vw;
     position: absolute;
     z-index: -1;
 }
 
-/*home*/
-
-#home {
-    position: relative;
+.baggrund {
+    visibility: hidden;
+    height: 0;
 }
 
-article {
+/*hamburgermenu*/
+
+.menubutton {
+    width: 2em;
+    height: 2em;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 10;
+    right: -89vw;
+    top: 3vw;
+}
+
+.bar {
+    width: 2em;
+    height: 0.2em;
+    background-color: rgb(218, 163, 158);
+    transition: transform .5s;
+}
+
+.hidden {
+    /*    display: none;*/
+    transform: translateY(-200px);
+}
+
+nav {
     position: absolute;
-    top: 65vw;
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 53%;
+    transform: translateY(1);
+    transform-origin: top;
+
+    transition: transform .5s;
+    position: absolute;
+    right: 0;
+}
+
+.kryds .bar1 {
+    transform: rotate(45deg) translate(8px, 7px);
+}
+
+.kryds .bar2 {
+    visibility: hidden;
+}
+
+.kryds .bar3 {
+    transform: rotate(-45deg) translate(8px, -7px);
+}
+
+header {
+    background-color: white;
+    height: 25vw;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/*home*/
+
+.indhold_hvidboks {
     background-color: white;
     width: 100%;
 }
 
-.boks {
-    top: 65vw;
-    background-color: white;
-}
-
-.home_indhold {
+.indhold {
     max-width: 85vw;
     margin: 0 auto;
+}
+
+.imi_billede {
+    width: 375px;
+    height: 627px;
+    background-color: aqua;
+}
+
+li {
+    color: rgb(48, 48, 48);
+}
+
+/*portfolio*/
+
+.hexagon {
+    width: 74vw;
+    height: 37vw;
+    background: red;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.hexagon_inside {
+    width: 100%;
+    height: 100%;
+    background: green;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hexagon_image {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/test.png);
+    background-position: center;
+    background-size: 100%;
+    transform: rotate(-60deg);
+    visibility: visible;
+}
+
+.hexagon_graa {
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.75);
+    transform: rotate(-60deg);
+    visibility: visible;
+}
+
+.hexagoner {
+    display: flex;
+    /*    flex-wrap: wrap;*/
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.hexagon1 {
+    position: absolute;
+    top: 32vw;
+    left: -5vw;
+}
+
+.tekstboks {
+    background-color: rgba(218, 163, 158, 0.83);
+    width: 84vw;
+    height: 15vw;
+    z-index: 10;
+    position: absolute;
+}
+
+#tekstboks1 {
+    top: 70vw;
+    left: 8vw;
+}
+
+#tekstboks2 {
+    top: 91.4vw;
+    left: 8vw;
+}
+
+#tekstboks3 {
+    top: 111.1vw;
+    left: 8vw;
+}
+
+#tekstboks4 {
+    top: 131.2vw;
+    left: 8vw;
+}
+
+#tekstboks5 {
+    top: 151.2vw;
+    left: 8vw;
+}
+
+#tekstboks6 {
+    top: 171vw;
+    left: 8vw;
+}
+
+.hexagon2 {
+    position: absolute;
+    top: 53vw;
+    left: 30vw;
+}
+
+.hexagon3 {
+    position: absolute;
+    top: 73vw;
+    left: -5vw;
+}
+
+.hexagon4 {
+    position: absolute;
+    top: 93vw;
+    left: 30vw;
+
+}
+
+.hexagon5 {
+    position: absolute;
+    top: 113vw;
+    left: -5vw;
+}
+
+.hexagon6 {
+    position: absolute;
+    top: 133vw;
+    left: 30vw;
+}
+
+.filler4 {
+    height: 160vw;
+}
+
+.closebutton {
+    width: 1.8em;
+    height: 1.8em;
+    position: relative;
+    z-index: 10;
+    top: 4vw;
+    right: -77vw;
+}
+
+.stroke {
+    width: 1.2em;
+    height: 0.1em;
+    background-color: rgb(48, 48, 48);
+}
+
+.stroke1 {
+    transform: rotate(45deg) translate(0px, 1.3px);
+}
+
+.stroke2 {
+    transform: rotate(-45deg) translate(-0.7px, -1px);
+}
+
+/*footer*/
+
+footer {
+    max-width: 85vw;
+    background-color: rgb(48, 48, 48);
+    margin: 0 auto;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    padding: 2vw 0;
+    color: rgb(218, 163, 158);
+}
+
+
+
+/*media queries*/
+
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+
+    .filler2 {
+        height: 56vw;
+    }
+
+    .desktop {
+        visibility: visible;
+    }
+    a.navn {
+        margin-left: 0vw;
+    }
+    .active {
+        font-weight: 900;
+        font-size: 1.2em;
+        margin-left: 60px;
+        border-bottom: 0.5px solid transparent;
+    }
+
+    header {
+        visibility: hidden;
+        height: 0;
+    }
+    .lag {
+        background-color: #294a41;
+        width: 100vw;
+        height: 56.6vw;
+        position: fixed;
+        z-index: -3;
+        top: 0vw;
+    }
+
+    .lag1 {
+        background-size: 100.7%;
+        background-image: url(assets/home_lag1.png);
+        width: 100vw;
+        height: 56.6vw;
+        top: 0vw;
+        position: fixed;
+        z-index: -2;
+    }
+
+    .lag2 {
+        background-size: 100%;
+        background-image: url(assets/home_lag2.png);
+        width: 100vw;
+        height: 56.7vw;
+        top: 3vw;
+        position: absolute;
+        z-index: -1;
+    }
+    .imi_billede {
+        height: 0px;
+        visibility: hidden;
+    }
+    .baggrund {
+        visibility: visible;
+    }
+    .hexagon {
+        width: 40vw;
+        height: 20vw;
+        background: red;
+        transform: rotate(120deg);
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .hexagon_inside {
+        width: 100%;
+        height: 100%;
+        background: green;
+        transform: rotate(-60deg);
+        overflow: hidden;
+    }
+
+    .hexagon_image {
+        width: 100%;
+        height: 100%;
+        background-image: url(assets/test.png);
+        background-position: center;
+        background-size: 100%;
+        transform: rotate(-60deg);
+        visibility: visible;
+    }
+
+    .hexagoner {
+        display: flex;
+        /*    flex-wrap: wrap;*/
+        max-width: 90vw;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .hexagon1 {
+        position: absolute;
+        top: 15vw;
+        left: 20vw;
+        z-index: 3;
+    }
+
+    .hexagon2 {
+        position: absolute;
+        top: 26vw;
+        left: 39vw;
+        z-index: 3;
+    }
+
+    .hexagon3 {
+        position: absolute;
+        top: 37vw;
+        left: 20vw;
+    }
+
+    .hexagon4 {
+        position: absolute;
+        top: 48vw;
+        left: 1vw;
+    }
+
+    .hexagon5 {
+        position: absolute;
+        top: 48vw;
+        left: 39vw;
+    }
+
+    .hexagon6 {
+        position: absolute;
+        top: 37vw;
+        left: 58vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .filler {
+        height: 6vw;
+        background-color: transparent;
+    }
+    .lag2 {
+        top: 6vw;
+    }
+    .filler2 {
+        height: 48vw;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .hexagon_image:hover {
+        background-image: url();
+        background-color: rgba(212, 129, 123, 0.7);
+    }
 }
