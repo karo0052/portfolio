@@ -31,6 +31,12 @@ function trykPaaProjekt1() {
     $("#graa5").addClass("hexagon");
     $("#graa6").addClass("hexagon");
 
+    $(".hexagon2").off("click", trykPaaProjekt2);
+    $(".hexagon3").off("click", trykPaaProjekt3);
+    $(".hexagon4").off("click", trykPaaProjekt4);
+    $(".hexagon5").off("click", trykPaaProjekt5);
+    $(".hexagon6").off("click", trykPaaProjekt6);
+
     $(".closebutton").on("click", basis1);
 }
 
@@ -42,6 +48,12 @@ function trykPaaProjekt2() {
     $("#graa4").addClass("hexagon");
     $("#graa5").addClass("hexagon");
     $("#graa6").addClass("hexagon");
+
+    $(".hexagon1").off("click", trykPaaProjekt1);
+    $(".hexagon3").off("click", trykPaaProjekt3);
+    $(".hexagon4").off("click", trykPaaProjekt4);
+    $(".hexagon5").off("click", trykPaaProjekt5);
+    $(".hexagon6").off("click", trykPaaProjekt6);
 
     $(".closebutton").on("click", basis2);
 }
@@ -55,6 +67,12 @@ function trykPaaProjekt3() {
     $("#graa5").addClass("hexagon");
     $("#graa6").addClass("hexagon");
 
+    $(".hexagon2").off("click", trykPaaProjekt2);
+    $(".hexagon1").off("click", trykPaaProjekt1);
+    $(".hexagon4").off("click", trykPaaProjekt4);
+    $(".hexagon5").off("click", trykPaaProjekt5);
+    $(".hexagon6").off("click", trykPaaProjekt6);
+
     $(".closebutton").on("click", basis3);
 }
 
@@ -66,6 +84,12 @@ function trykPaaProjekt4() {
     $("#graa3").addClass("hexagon");
     $("#graa5").addClass("hexagon");
     $("#graa6").addClass("hexagon");
+
+    $(".hexagon2").off("click", trykPaaProjekt2);
+    $(".hexagon3").off("click", trykPaaProjekt3);
+    $(".hexagon1").off("click", trykPaaProjekt1);
+    $(".hexagon5").off("click", trykPaaProjekt5);
+    $(".hexagon6").off("click", trykPaaProjekt6);
 
     $(".closebutton").on("click", basis4);
 }
@@ -79,6 +103,12 @@ function trykPaaProjekt5() {
     $("#graa4").addClass("hexagon");
     $("#graa6").addClass("hexagon");
 
+    $(".hexagon2").off("click", trykPaaProjekt2);
+    $(".hexagon3").off("click", trykPaaProjekt3);
+    $(".hexagon4").off("click", trykPaaProjekt4);
+    $(".hexagon1").off("click", trykPaaProjekt1);
+    $(".hexagon6").off("click", trykPaaProjekt6);
+
     $(".closebutton").on("click", basis5);
 }
 
@@ -91,6 +121,12 @@ function trykPaaProjekt6() {
     $("#graa4").addClass("hexagon");
     $("#graa5").addClass("hexagon");
 
+    $(".hexagon2").off("click", trykPaaProjekt2);
+    $(".hexagon3").off("click", trykPaaProjekt3);
+    $(".hexagon4").off("click", trykPaaProjekt4);
+    $(".hexagon5").off("click", trykPaaProjekt5);
+    $(".hexagon1").off("click", trykPaaProjekt1);
+
     $(".closebutton").on("click", basis6);
 }
 
@@ -102,6 +138,13 @@ function basis1() {
     $("#graa4").removeClass("hexagon");
     $("#graa5").removeClass("hexagon");
     $("#graa6").removeClass("hexagon");
+
+    $(".hexagon1").on("click", trykPaaProjekt1);
+    $(".hexagon2").on("click", trykPaaProjekt2);
+    $(".hexagon3").on("click", trykPaaProjekt3);
+    $(".hexagon4").on("click", trykPaaProjekt4);
+    $(".hexagon5").on("click", trykPaaProjekt5);
+    $(".hexagon6").on("click", trykPaaProjekt6);
 }
 
 function basis2() {
@@ -112,6 +155,13 @@ function basis2() {
     $("#graa4").removeClass("hexagon");
     $("#graa5").removeClass("hexagon");
     $("#graa6").removeClass("hexagon");
+
+    $(".hexagon1").on("click", trykPaaProjekt1);
+    $(".hexagon2").on("click", trykPaaProjekt2);
+    $(".hexagon3").on("click", trykPaaProjekt3);
+    $(".hexagon4").on("click", trykPaaProjekt4);
+    $(".hexagon5").on("click", trykPaaProjekt5);
+    $(".hexagon6").on("click", trykPaaProjekt6);
 }
 
 function basis3() {
@@ -122,6 +172,13 @@ function basis3() {
     $("#graa4").removeClass("hexagon");
     $("#graa5").removeClass("hexagon");
     $("#graa6").removeClass("hexagon");
+
+    $(".hexagon1").on("click", trykPaaProjekt1);
+    $(".hexagon2").on("click", trykPaaProjekt2);
+    $(".hexagon3").on("click", trykPaaProjekt3);
+    $(".hexagon4").on("click", trykPaaProjekt4);
+    $(".hexagon5").on("click", trykPaaProjekt5);
+    $(".hexagon6").on("click", trykPaaProjekt6);
 }
 
 function basis4() {
@@ -132,6 +189,13 @@ function basis4() {
     $("#graa3").removeClass("hexagon");
     $("#graa5").removeClass("hexagon");
     $("#graa6").removeClass("hexagon");
+
+    $(".hexagon1").on("click", trykPaaProjekt1);
+    $(".hexagon2").on("click", trykPaaProjekt2);
+    $(".hexagon3").on("click", trykPaaProjekt3);
+    $(".hexagon4").on("click", trykPaaProjekt4);
+    $(".hexagon5").on("click", trykPaaProjekt5);
+    $(".hexagon6").on("click", trykPaaProjekt6);
 }
 
 function basis5() {
@@ -142,6 +206,13 @@ function basis5() {
     $("#graa3").removeClass("hexagon");
     $("#graa4").removeClass("hexagon");
     $("#graa6").removeClass("hexagon");
+
+    $(".hexagon1").on("click", trykPaaProjekt1);
+    $(".hexagon2").on("click", trykPaaProjekt2);
+    $(".hexagon3").on("click", trykPaaProjekt3);
+    $(".hexagon4").on("click", trykPaaProjekt4);
+    $(".hexagon5").on("click", trykPaaProjekt5);
+    $(".hexagon6").on("click", trykPaaProjekt6);
 }
 
 function basis6() {
@@ -152,4 +223,11 @@ function basis6() {
     $("#graa3").removeClass("hexagon");
     $("#graa4").removeClass("hexagon");
     $("#graa5").removeClass("hexagon");
+
+    $(".hexagon1").on("click", trykPaaProjekt1);
+    $(".hexagon2").on("click", trykPaaProjekt2);
+    $(".hexagon3").on("click", trykPaaProjekt3);
+    $(".hexagon4").on("click", trykPaaProjekt4);
+    $(".hexagon5").on("click", trykPaaProjekt5);
+    $(".hexagon6").on("click", trykPaaProjekt6);
 }

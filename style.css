@@ -29,14 +29,8 @@ div.indhold {
 }
 
 .menu_alt {
-    background-color: rgb(255, 255, 255);
-    position: sticky;
-    width: 100%;
-    /*    height: 6vw;*/
-    z-index: 20;
-    top: 0;
-    padding-bottom: 1vw;
-    padding-top: 0.6vw;
+    visibility: hidden;
+    height: 0;
 }
 
 
@@ -49,7 +43,7 @@ div.indhold {
 }
 
 a.menu {
-    font-weight: 900;
+    font-weight: 200;
     font-size: 1.2em;
     margin-left: 60px;
     border-bottom: 0.5px solid transparent;
@@ -77,13 +71,14 @@ a {
     color: rgb(218, 163, 158);
 }
 
-.desktop {
+/*baggrund*/
+
+.baggrund {
     visibility: hidden;
     height: 0;
 }
 
-/*baggrund*/
-
+/*
 .lag {
     background-color: #294a41;
     width: 100vw;
@@ -108,15 +103,11 @@ a {
     background-image: url(assets/home_lag2.png);
     width: 100vw;
     height: 56.7vw;
-    top: 6vw;
+    top: 0vw;
     position: absolute;
     z-index: -1;
 }
-
-.baggrund {
-    visibility: hidden;
-    height: 0;
-}
+*/
 
 /*hamburgermenu*/
 
@@ -143,6 +134,7 @@ a {
 }
 
 .hidden {
+
     /*    display: none;*/
     transform: translateY(-200px);
 }
@@ -192,8 +184,8 @@ header {
 }
 
 .imi_billede {
-    width: 375px;
-    height: 627px;
+    max-width: 650px;
+    height: 827px;
     background-color: aqua;
 }
 
@@ -223,7 +215,6 @@ li {
 .hexagon_image {
     width: 100%;
     height: 100%;
-    background-image: url(assets/test.png);
     background-position: center;
     background-size: 100%;
     transform: rotate(-60deg);
@@ -240,15 +231,8 @@ li {
 
 .hexagoner {
     display: flex;
-    /*    flex-wrap: wrap;*/
     max-width: 90vw;
     margin: 0 auto;
-}
-
-.hexagon1 {
-    position: absolute;
-    top: 32vw;
-    left: -5vw;
 }
 
 .tekstboks {
@@ -259,33 +243,19 @@ li {
     position: absolute;
 }
 
+
+.hexagon1 {
+    position: absolute;
+    top: 32vw;
+    left: -5vw;
+}
+
+.billede1 {
+    background-image: url(assets/stilart_v2.jpg);
+}
+
 #tekstboks1 {
     top: 70vw;
-    left: 8vw;
-}
-
-#tekstboks2 {
-    top: 91.4vw;
-    left: 8vw;
-}
-
-#tekstboks3 {
-    top: 111.1vw;
-    left: 8vw;
-}
-
-#tekstboks4 {
-    top: 131.2vw;
-    left: 8vw;
-}
-
-#tekstboks5 {
-    top: 151.2vw;
-    left: 8vw;
-}
-
-#tekstboks6 {
-    top: 171vw;
     left: 8vw;
 }
 
@@ -295,17 +265,43 @@ li {
     left: 30vw;
 }
 
+.billede2 {
+    background-image: url(assets/redesign.jpg);
+}
+
+#tekstboks2 {
+    top: 91.4vw;
+    left: 8vw;
+}
+
 .hexagon3 {
     position: absolute;
     top: 73vw;
     left: -5vw;
 }
 
+.billede3 {
+    background-image: url(assets/animation.jpg);
+}
+
+#tekstboks3 {
+    top: 111.1vw;
+    left: 8vw;
+}
+
 .hexagon4 {
     position: absolute;
     top: 93vw;
     left: 30vw;
+}
 
+.billede4 {
+    background-image: url(assets/sexogsamfund.jpg);
+}
+
+#tekstboks4 {
+    top: 131.2vw;
+    left: 8vw;
 }
 
 .hexagon5 {
@@ -314,10 +310,33 @@ li {
     left: -5vw;
 }
 
+.billede5 {
+    background-image: url(assets/keaapp.jpg);
+}
+
+#tekstboks5 {
+    top: 151.2vw;
+    left: 8vw;
+}
+
+
 .hexagon6 {
     position: absolute;
     top: 133vw;
     left: 30vw;
+}
+
+.billede6 {
+    background-image: url(assets/joeapp.jpg);
+}
+
+#tekstboks6 {
+    top: 171vw;
+    left: 8vw;
+}
+
+.filler3 {
+    height: 80vw;
 }
 
 .filler4 {
@@ -353,8 +372,7 @@ footer {
     max-width: 85vw;
     background-color: rgb(48, 48, 48);
     margin: 0 auto;
-    position: sticky;
-    bottom: 0;
+
 }
 
 .footer {
@@ -362,23 +380,45 @@ footer {
     background-color: rgb(48, 48, 48);
     padding: 2vw 0;
     color: rgb(218, 163, 158);
+
+    /*
+    position: relative;
+    bottom: 0;
+*/
 }
 
 
 
 /*media queries*/
 
-@media only screen and (min-width: 500px) and (orientation: landscape) {
+/*mobile landscape*/
+
+@media only screen and (min-width: 594px) and (orientation: landscape) {
+    /*menu*/
+    .filler {
+        height: 0vw;
+    }
+
+    .menu_alt {
+        background-color: rgb(255, 255, 255);
+        position: sticky;
+        width: 100%;
+        z-index: 20;
+        top: 0;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
+        visibility: visible;
+        height: auto;
+    }
 
     .filler2 {
         height: 56vw;
     }
 
-    .desktop {
-        visibility: visible;
-    }
     a.navn {
         margin-left: 0vw;
+        font-size: 1.8em;
+        font-weight: 900;
     }
     .active {
         font-weight: 900;
@@ -386,11 +426,12 @@ footer {
         margin-left: 60px;
         border-bottom: 0.5px solid transparent;
     }
-
-    header {
-        visibility: hidden;
-        height: 0;
+    /*menu slut*/
+    /*baggrund*/
+    .baggrund {
+        visibility: visible;
     }
+
     .lag {
         background-color: #294a41;
         width: 100vw;
@@ -415,7 +456,162 @@ footer {
         background-image: url(assets/home_lag2.png);
         width: 100vw;
         height: 56.7vw;
-        top: 3vw;
+        top: 0vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .imi_billede {
+        height: 0px;
+        visibility: hidden;
+    }
+    /*baggrund slut*/
+    /*hamburgermenu*/
+    header {
+        visibility: hidden;
+        height: 0;
+    }
+    /*hamburgermenu slut*/
+    /*portfolio*/
+    .hexagon {
+        width: 40vw;
+        height: 20vw;
+    }
+
+    .hexagon1 {
+        position: absolute;
+        top: 10vw;
+        left: 20vw;
+        z-index: 3;
+    }
+
+    #tekstboks1 {
+        top: 31vw;
+        left: 8vw;
+    }
+
+    .hexagon2 {
+        position: absolute;
+        top: 21vw;
+        left: 39vw;
+        z-index: 3;
+    }
+
+    #tekstboks2 {
+        top: 42vw;
+        left: 8vw;
+    }
+
+    .hexagon3 {
+        position: absolute;
+        top: 32vw;
+        left: 20vw;
+    }
+
+    #tekstboks3 {
+        top: 53vw;
+        left: 8vw;
+    }
+
+    .hexagon4 {
+        position: absolute;
+        top: 43vw;
+        left: 1vw;
+    }
+
+    #tekstboks4 {
+        top: 64vw;
+        left: 8vw;
+    }
+
+    .hexagon5 {
+        position: absolute;
+        top: 43vw;
+        left: 39vw;
+    }
+
+    #tekstboks5 {
+        top: 64vw;
+        left: 8vw;
+    }
+
+    .hexagon6 {
+        position: absolute;
+        top: 32vw;
+        left: 58vw;
+    }
+
+    #tekstboks6 {
+        top: 53vw;
+        left: 8vw;
+    }
+
+    .filler4 {
+        height: 72.5vw;
+    }
+    /*portfolio slut*/
+}
+
+/*tablet portrait*/
+
+@media only screen and (min-width: 594px) and (orientation: portrait) {
+    /*menu*/
+    .filler {
+        height: 6vw;
+    }
+
+    .menu_alt {
+        background-color: rgb(255, 255, 255);
+        position: sticky;
+        width: 100%;
+        z-index: 20;
+        top: 0;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
+        visibility: visible;
+        height: auto;
+    }
+
+    .filler2 {
+        height: 56vw;
+    }
+
+    a.navn {
+        font-size: 2.5em;
+        font-weight: 900;
+        margin-left: 0vw;
+    }
+    /*menu slut*/
+    /*baggrund*/
+    .baggrund {
+        visibility: visible;
+    }
+
+    .lag {
+        background-color: #294a41;
+        width: 100vw;
+        height: 56.6vw;
+        position: fixed;
+        z-index: -3;
+        top: 0vw;
+    }
+
+    .lag1 {
+        background-size: 100.7%;
+        background-image: url(assets/home_lag1.png);
+        width: 100vw;
+        height: 56.6vw;
+        top: 0vw;
+        position: fixed;
+        z-index: -2;
+    }
+
+    .lag2 {
+        background-size: 100%;
+        background-image: url(assets/home_lag2.png);
+        width: 100vw;
+        height: 56.7vw;
+        top: 0vw;
         position: absolute;
         z-index: -1;
     }
@@ -423,100 +619,247 @@ footer {
         height: 0px;
         visibility: hidden;
     }
-    .baggrund {
-        visibility: visible;
-    }
-    .hexagon {
-        width: 40vw;
-        height: 20vw;
-        background: red;
-        transform: rotate(120deg);
-        overflow: hidden;
+
+    /*baggrund slut*/
+    /*hamburgermenu*/
+    header {
         visibility: hidden;
+        height: 0;
     }
 
-    .hexagon_inside {
-        width: 100%;
-        height: 100%;
-        background: green;
-        transform: rotate(-60deg);
-        overflow: hidden;
+    /*hamburgermenu slut*/
+    /*portfolio*/
+    .filler4 {
+        height: 127vw;
     }
 
-    .hexagon_image {
-        width: 100%;
-        height: 100%;
-        background-image: url(assets/test.png);
-        background-position: center;
-        background-size: 100%;
-        transform: rotate(-60deg);
-        visibility: visible;
-    }
-
-    .hexagoner {
-        display: flex;
-        /*    flex-wrap: wrap;*/
-        max-width: 90vw;
-        margin: 0 auto;
-        justify-content: space-between;
+    .hexagon {
+        width: 46vw;
+        height: 23vw;
     }
 
     .hexagon1 {
         position: absolute;
-        top: 15vw;
-        left: 20vw;
+        top: 25vw;
+        left: 25vw;
         z-index: 3;
+    }
+
+    #tekstboks1 {
+        top: 102vw;
+        left: 8vw;
     }
 
     .hexagon2 {
         position: absolute;
-        top: 26vw;
-        left: 39vw;
+        top: 38vw;
+        left: 47vw;
         z-index: 3;
+    }
+
+    #tekstboks2 {
+        top: 102vw;
+        left: 8vw;
     }
 
     .hexagon3 {
         position: absolute;
-        top: 37vw;
-        left: 20vw;
+        top: 50vw;
+        left: 25vw;
+    }
+
+    #tekstboks3 {
+        top: 102vw;
+        left: 8vw;
     }
 
     .hexagon4 {
         position: absolute;
-        top: 48vw;
-        left: 1vw;
+        top: 62.5vw;
+        left: 3vw;
+    }
+
+    #tekstboks4 {
+        top: 102vw;
+        left: 8vw;
     }
 
     .hexagon5 {
         position: absolute;
-        top: 48vw;
-        left: 39vw;
+        top: 63vw;
+        left: 47vw;
+    }
+
+    #tekstboks5 {
+        top: 102vw;
+        left: 8vw;
     }
 
     .hexagon6 {
         position: absolute;
-        top: 37vw;
-        left: 58vw;
+        top: 75vw;
+        left: 25vw;
     }
+
+    #tekstboks6 {
+        top: 102vw;
+        left: 8vw;
+    }
+    /*portfolio slut*/
 }
 
+/*tablet landscape*/
+
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
+
+    /*menu*/
+    .menu_alt {
+        padding-bottom: 0vw;
+        padding-top: 0vw;
+    }
     .filler {
-        height: 6vw;
+        height: 5vw;
         background-color: transparent;
     }
-    .lag2 {
-        top: 6vw;
+
+    a.navn {
+        font-size: 2.5em;
+        font-weight: 900;
     }
+
     .filler2 {
         height: 48vw;
     }
+
+    /*menu slut*/
+    /*portfolio*/
+    .hexagon1 {
+        position: absolute;
+        top: 14vw;
+        left: 20vw;
+        z-index: 3;
+    }
+
+    #tekstboks1 {
+        top: 35vw;
+        left: 8vw;
+    }
+
+    .hexagon2 {
+        position: absolute;
+        top: 25vw;
+        left: 39vw;
+        z-index: 3;
+    }
+
+    #tekstboks2 {
+        top: 46vw;
+        left: 8vw;
+    }
+
+    .hexagon3 {
+        position: absolute;
+        top: 36vw;
+        left: 20vw;
+    }
+
+    #tekstboks3 {
+        top: 57vw;
+        left: 8vw;
+    }
+
+    .hexagon4 {
+        position: absolute;
+        top: 47vw;
+        left: 1vw;
+    }
+
+    #tekstboks4 {
+        top: 68vw;
+        left: 8vw;
+    }
+
+    .hexagon5 {
+        position: absolute;
+        top: 47vw;
+        left: 39vw;
+    }
+
+    #tekstboks5 {
+        top: 68vw;
+        left: 8vw;
+    }
+
+    .hexagon6 {
+        position: absolute;
+        top: 36vw;
+        left: 58vw;
+    }
+
+    #tekstboks6 {
+        top: 57vw;
+        left: 8vw;
+    }
+    .filler4 {
+        height: 80vw;
+    }
+    /*portfolio slut*/
 }
+
+/*desktop*/
 
 @media only screen and (min-width: 1100px) {
 
+    /*menu*/
+    .filler {
+        height: 6vw;
+    }
+
+    .menu_alt {
+        padding-bottom: 0vw;
+        padding-top: 0vw;
+    }
+
+
+    .filler2 {
+        height: 48vw;
+    }
+    /*menu slut*/
+    /*baggrund*/
+    .lag {
+        background-color: #294a41;
+        width: 100vw;
+        height: 56.6vw;
+        position: fixed;
+        z-index: -3;
+        top: 0vw;
+    }
+
+    .lag1 {
+        background-size: 100.7%;
+        background-image: url(assets/home_lag1.png);
+        width: 100vw;
+        height: 56.6vw;
+        top: 0vw;
+        position: fixed;
+        z-index: -2;
+    }
+
+    .lag2 {
+        background-size: 100%;
+        background-image: url(assets/home_lag2.png);
+        width: 100vw;
+        height: 56.7vw;
+        top: 4vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /*baggrund slut*/
+    /*portfolio*/
     .hexagon_image:hover {
         background-image: url();
         background-color: rgba(212, 129, 123, 0.7);
     }
+    /*portfolio slut*/
 }
