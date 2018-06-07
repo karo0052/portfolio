@@ -3,6 +3,21 @@ body {
     padding: 0;
     background-color: rgb(212, 219, 217);
     font-family: 'Poiret One', cursive;
+    /*
+    display: table;
+    width: 100%;
+    height: 100%;
+*/
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site_content {
+    flex: 1;
 }
 
 p {
@@ -45,8 +60,11 @@ div.indhold {
 a.menu {
     font-weight: 200;
     font-size: 1.2em;
-    margin-left: 60px;
     border-bottom: 0.5px solid transparent;
+}
+
+.padding {
+    margin-left: 60px;
 }
 
 a.menu:hover {
@@ -75,7 +93,7 @@ a {
 
 .baggrund {
     visibility: hidden;
-    height: 0;
+    /*    height: 0;*/
 }
 
 /*
@@ -251,7 +269,7 @@ li {
 }
 
 .billede1 {
-    background-image: url(assets/stilart_v2.jpg);
+    background-image: url(assets/stilart_graa.jpg);
 }
 
 #tekstboks1 {
@@ -266,7 +284,7 @@ li {
 }
 
 .billede2 {
-    background-image: url(assets/redesign.jpg);
+    background-image: url(assets/redesign_graa.jpg);
 }
 
 #tekstboks2 {
@@ -281,7 +299,7 @@ li {
 }
 
 .billede3 {
-    background-image: url(assets/animation.jpg);
+    background-image: url(assets/animation_graa.jpg);
 }
 
 #tekstboks3 {
@@ -296,7 +314,7 @@ li {
 }
 
 .billede4 {
-    background-image: url(assets/sexogsamfund.jpg);
+    background-image: url(assets/sexogsamfund_graa.jpg);
 }
 
 #tekstboks4 {
@@ -311,7 +329,7 @@ li {
 }
 
 .billede5 {
-    background-image: url(assets/keaapp.jpg);
+    background-image: url(assets/keaapp_graa.jpg);
 }
 
 #tekstboks5 {
@@ -327,7 +345,7 @@ li {
 }
 
 .billede6 {
-    background-image: url(assets/joeapp.jpg);
+    background-image: url(assets/joeapp_graa.jpg);
 }
 
 #tekstboks6 {
@@ -335,35 +353,48 @@ li {
     left: 8vw;
 }
 
+.hovertext {
+    margin: 0 auto;
+    padding: 10vw;
+    max-width: 16vw;
+    position: relative;
+    z-index: 100;
+    top: -4vw;
+    right: -1vw;
+    color: transparent;
+}
+
 .filler3 {
     height: 80vw;
 }
 
 .filler4 {
-    height: 160vw;
+    height: 85vw;
 }
 
 .closebutton {
     width: 1.8em;
     height: 1.8em;
-    position: relative;
-    z-index: 10;
-    top: 4vw;
-    right: -77vw;
+    position: absolute;
+    z-index: 50;
+    top: 0.8vw;
+    right: 0.8vw;
+    /*    background-color: red;*/
 }
 
 .stroke {
-    width: 1.2em;
+    width: 1.5em;
     height: 0.1em;
     background-color: rgb(48, 48, 48);
 }
 
 .stroke1 {
-    transform: rotate(45deg) translate(0px, 1.3px);
+    transform: translate(5px, 14px) rotate(45deg);
 }
 
 .stroke2 {
-    transform: rotate(-45deg) translate(-0.7px, -1px);
+    /*    transform: rotate(-45deg) translate(0px);*/
+    transform: translate(5px, 12px) rotate(-45deg);
 }
 
 /*footer*/
@@ -372,7 +403,10 @@ footer {
     max-width: 85vw;
     background-color: rgb(48, 48, 48);
     margin: 0 auto;
-
+    /*
+    display: table-row;
+    height: 0;
+*/
 }
 
 .footer {
@@ -380,7 +414,6 @@ footer {
     background-color: rgb(48, 48, 48);
     padding: 2vw 0;
     color: rgb(218, 163, 158);
-
     /*
     position: relative;
     bottom: 0;
@@ -480,74 +513,78 @@ footer {
 
     .hexagon1 {
         position: absolute;
-        top: 10vw;
+        top: 12vw;
         left: 20vw;
         z-index: 3;
     }
 
     #tekstboks1 {
-        top: 31vw;
+        top: 33vw;
         left: 8vw;
     }
 
     .hexagon2 {
         position: absolute;
-        top: 21vw;
+        top: 23vw;
         left: 39vw;
         z-index: 3;
     }
 
     #tekstboks2 {
-        top: 42vw;
+        top: 44vw;
         left: 8vw;
     }
 
     .hexagon3 {
         position: absolute;
-        top: 32vw;
+        top: 34vw;
         left: 20vw;
     }
 
     #tekstboks3 {
-        top: 53vw;
+        top: 55vw;
         left: 8vw;
     }
 
     .hexagon4 {
         position: absolute;
-        top: 43vw;
+        top: 45vw;
         left: 1vw;
     }
 
     #tekstboks4 {
-        top: 64vw;
+        top: 66vw;
         left: 8vw;
     }
 
     .hexagon5 {
         position: absolute;
-        top: 43vw;
+        top: 45vw;
         left: 39vw;
     }
 
     #tekstboks5 {
-        top: 64vw;
+        top: 66vw;
         left: 8vw;
     }
 
     .hexagon6 {
         position: absolute;
-        top: 32vw;
+        top: 34vw;
         left: 58vw;
     }
 
     #tekstboks6 {
-        top: 53vw;
+        top: 55vw;
         left: 8vw;
     }
 
+    .filler3 {
+        height: 0vw;
+    }
+
     .filler4 {
-        height: 72.5vw;
+        height: 74vw;
     }
     /*portfolio slut*/
 }
@@ -629,10 +666,6 @@ footer {
 
     /*hamburgermenu slut*/
     /*portfolio*/
-    .filler4 {
-        height: 127vw;
-    }
-
     .hexagon {
         width: 46vw;
         height: 23vw;
@@ -646,7 +679,7 @@ footer {
     }
 
     #tekstboks1 {
-        top: 102vw;
+        top: 100vw;
         left: 8vw;
     }
 
@@ -658,7 +691,7 @@ footer {
     }
 
     #tekstboks2 {
-        top: 102vw;
+        top: 100vw;
         left: 8vw;
     }
 
@@ -669,7 +702,7 @@ footer {
     }
 
     #tekstboks3 {
-        top: 102vw;
+        top: 100vw;
         left: 8vw;
     }
 
@@ -680,7 +713,7 @@ footer {
     }
 
     #tekstboks4 {
-        top: 102vw;
+        top: 100vw;
         left: 8vw;
     }
 
@@ -691,7 +724,7 @@ footer {
     }
 
     #tekstboks5 {
-        top: 102vw;
+        top: 100vw;
         left: 8vw;
     }
 
@@ -702,8 +735,16 @@ footer {
     }
 
     #tekstboks6 {
-        top: 102vw;
+        top: 100vw;
         left: 8vw;
+    }
+
+    .filler3 {
+        height: 50vw;
+    }
+
+    .filler4 {
+        height: 10vw;
     }
     /*portfolio slut*/
 }
@@ -857,9 +898,44 @@ footer {
 
     /*baggrund slut*/
     /*portfolio*/
-    .hexagon_image:hover {
-        background-image: url();
-        background-color: rgba(212, 129, 123, 0.7);
+    .billede1:hover {
+        background-image: url(assets/stilart_pink.jpg);
+    }
+
+    .billede2:hover {
+        background-image: url(assets/redesign_pink.jpg);
+    }
+
+    .billede3:hover {
+        background-image: url(assets/animation_pink.jpg);
+    }
+
+    .billede4:hover {
+        background-image: url(assets/sexogsamfund_pink.jpg);
+    }
+
+    .billede5:hover {
+        background-image: url(assets/keaapp_pink.jpg);
+    }
+
+    .billede6:hover {
+        background-image: url(assets/joeapp_pink.jpg);
+    }
+
+    .hovertext:hover {
+        color: white;
+    }
+
+    .hexagon_graa {
+        visibility: hidden;
+    }
+    .tekstboks {
+        visibility: hidden;
+        height: 0vw;
+    }
+
+    .filler4 {
+        height: 65vw;
     }
     /*portfolio slut*/
 }
