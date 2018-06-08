@@ -26,6 +26,7 @@ p {
     color: rgb(48, 48, 48);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
+    font-weight: 300;
 }
 
 ul li {
@@ -98,6 +99,7 @@ h3 {
     flex-basis: 1;
     margin-top: 5vw;
     margin-bottom: 10vw;
+    max-width: 85vw;
 }
 
 /*menu*/
@@ -230,9 +232,7 @@ nav {
     width: 53%;
     transform: translateY(1);
     transform-origin: top;
-
     transition: transform .5s;
-    position: absolute;
     right: 0;
 }
 
@@ -477,7 +477,7 @@ li {
 .stroke {
     width: 1.5em;
     height: 0.1em;
-    background-color: rgb(48, 48, 48);
+    background-color: white;
 }
 
 .stroke1 {
@@ -522,6 +522,11 @@ li {
     text-decoration: underline;
 }
 
+.stilart_tekstboks a {
+    color: rgb(212, 129, 123);
+    text-decoration: underline;
+}
+
 /*redesign*/
 
 .hs-responsive-embed-youtube iframe {
@@ -545,6 +550,16 @@ li {
     font-size: 3.2em;
 }
 
+/*kea app*/
+
+video {
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 704px;
+    max-width: 85vw;
+    min-width: 240px;
+    height: 576px;
+}
 
 /*footer*/
 
@@ -1013,6 +1028,11 @@ footer {
         min-width: 240px;
     }
 
+    video {
+        max-width: 40vw;
+        min-width: 240px;
+    }
+
     .reverse {
         flex-direction: row-reverse;
     }
@@ -1030,6 +1050,10 @@ footer {
 
     .margin_bottom {
         margin-bottom: 10vw;
+    }
+
+    .link {
+        max-width: 40vw;
     }
 
     /*stilart slut*/
