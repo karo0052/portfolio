@@ -7,10 +7,11 @@
     <title>by Lüthje - STILARTSSITE</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900" rel="stylesheet">
 </head>
 
 
-<body>
+<body class="site">
     <!--menu hamburger-->
     <header>
         <div class="menubutton">
@@ -30,23 +31,68 @@
     <!--menu hamburger slut-->
 
     <!--menu desktop-->
-    <div class="desktop">
-        <div class="filler"></div>
-        <div class="menu_alt">
-            <div class="menu_indhold">
-                <div class="menu_venstre">
-                    <a href="index.html" class="navn">by Lüthje</a>
-                </div>
-                <div class="menu_hoejre">
-                    <a href="index.html" class="menu">HOME</a>
-                    <a href="portfolio.html" class="menu">PORTFOLIO</a>
-                    <a href="about.html" class="menu">ABOUT</a>
-                </div>
+    <div class="filler"></div>
+    <div class="menu_alt">
+        <div class="menu_indhold">
+            <div class="menu_venstre">
+                <a href="index.html" class="navn">by Lüthje</a>
+            </div>
+            <div class="menu_hoejre">
+                <a href="index.html" class="menu">HOME</a>
+                <a href="portfolio.html" class="menu padding">PORTFOLIO</a>
+                <a href="about.html" class="menu padding">ABOUT</a>
             </div>
         </div>
     </div>
     <!--menu desktop slut-->
+    <main class="site_content">
+        <h1>STILARTSITE</h1>
+        <div class="pinkboks">
+            <h2>TEMA 1 / GRUNDLÆGGENDE WEBDESIGN</h2>
+            <p class="formaal">Formålet med tema 1 var at opnå et grundlæggende kendskab til kodning af websites vha. af HTML og CSS. Sitet skulle omhandle en tildelt stilart - i mit tilfælde Pop Art - og gøres responsivt med media queries. Derudover indeholdt forløbet opgaver, der gav grundlæggende færdigheder indenfor billedbehandling i Photoshop og layout i InDesign.</p>
+        </div>
+        <div class="container">
+            <div class="stilart_billede left"><img src="assets/stilart_moodboard.png" alt="Pop art moodboard"></div>
+            <div class="stilart_tekstboks">
+                <h3>MOODBOARD</h3>
+                <p>Først researchede vi på stilarten og indsamlede en masse materiale til brug på sitet. På den måde fik vi kendskab til stilarten, dens kendetegn og udtryk. Ud fra researchen lavede jeg et moodboard i Photoshop, som viser stilen, teksturer og farvebrug.</p>
+            </div>
+        </div>
 
+        <div class="container reverse">
+            <div class="stilart_billede right"><img src="assets/stilart_styletile_v2.png" alt="Pop art styletile"></div>
+            <div class="stilart_tekstboks">
+                <h3>STYLETILE</h3>
+                <p>For at angive stilen på sitet, lavede jeg et styletile, der viser, hvilke skrifttyper sitet anvender, samt på hvilken måde de anvendes. Jeg valgte 3 forskellige skrifttyper, som passer til deres formål - altså særprægede skrifttyper til brug i splashbillede og til overskrifter, for at skabe opmærksomhed, mens brødteksten er neutral og letlæselig. <br><br>Styletile angiver desuden med hvilken størrelse og hvilket snit skrifttyperne skal bruges, for at skabe kontraster, der viser hierakiet på sitet. Da farverne i Pop Art er meget kraftige og klare, har jeg lavet en "dobbelt" farvepalette, hvor farverne også er angivet i en mere dæmpet udgave, for at skabe ro.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="stilart_billede left">
+                <picture>
+                    <source media="(min-width: 1920px) and (orientation: landscape)" srcset="assets/desktop.jpg">
+                    <source media="(min-width: 1024px) and (orientation: landscape)" srcset="assets/tablet_landscape.jpg">
+                    <source media="(min-width: 768px) and (orientation: portrait)" srcset="assets/tablet_portrait.jpg">
+                    <source media="(min-width: 627px) and (orientation: landscape)" srcset="assets/mobile_landscape.jpg">
+                    <source media="(min-width: 375px) and (orientation: portrait)" srcset="assets/mobile_portrait.jpg">
+                    <img src="assets/mobile_portrait.jpg" alt="splashbillede i mobil portræt format" style="width:100%;">
+                </picture>
+            </div>
+            <div class="stilart_tekstboks">
+                <h3>SPLASH IMAGE</h3>
+                <p>Splashbilledet er et portræt af en af Pop Artens helt store kunstnere, Andy Warhol. Billedet er redigeret i photoshop, for at give det et tegneserielignende udtryk, samt tilføje tekstur i form af rastaprikker.</p>
+            </div>
+        </div>
+
+        <div class="container reverse margin_bottom">
+            <div class="stilart_billede right"><img src="assets/stilart_mockup.jpg" alt="Pop art styletile"></div>
+            <div class="link">
+                <h3>WEBSITE</h3>
+                <a href="http://www.byluethje.com/kea/01-web/04-responsive/01_04_04_responsive_v3/" target="_blank">Besøg sitet her!</a>
+            </div>
+        </div>
+
+    </main>
     <!--footer-->
     <div class="footer">
         <footer>
