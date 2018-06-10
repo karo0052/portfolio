@@ -102,6 +102,7 @@ h3 {
     max-width: 85vw;
 }
 
+
 /*menu*/
 
 .filler {
@@ -109,7 +110,7 @@ h3 {
 }
 
 .filler2 {
-    height: 0vw;
+    height: 145vw;
 }
 
 .menu_alt {
@@ -160,16 +161,17 @@ a {
 
 /*baggrund*/
 
+/*
 .baggrund {
     visibility: hidden;
-    /*    height: 0;*/
+        height: 0;
 }
+*/
 
-/*
 .lag {
     background-color: #294a41;
     width: 100vw;
-    height: 56.6vw;
+    height: 178vw;
     position: fixed;
     z-index: -3;
     top: 0vw;
@@ -177,9 +179,9 @@ a {
 
 .lag1 {
     background-size: 100.7%;
-    background-image: url(assets/home_lag1.png);
-    width: 100vw;
-    height: 56.6vw;
+    background-image: url(assets/l1.png);
+    width: 100%;
+    height: 100%;
     top: 0vw;
     position: fixed;
     z-index: -2;
@@ -187,14 +189,13 @@ a {
 
 .lag2 {
     background-size: 100%;
-    background-image: url(assets/home_lag2.png);
+    background-image: url(assets/l2.png);
     width: 100vw;
-    height: 56.7vw;
-    top: 0vw;
+    height: 167vw;
+    top: 8vw;
     position: absolute;
     z-index: -1;
 }
-*/
 
 /*hamburgermenu*/
 
@@ -509,12 +510,19 @@ li {
 .stilart_billede {
     flex-basis: 1;
     margin-top: 5vw;
-}
 
-.stilart_billede img {
     max-width: 85vw;
     /*    max-width: 25vw;*/
     min-width: 240px;
+}
+
+.stilart_billede img {
+    /*
+    max-width: 85vw;
+    min-width: 240px;
+
+*/
+    max-width: 100%;
 }
 
 .link a {
@@ -555,10 +563,14 @@ li {
 video {
     padding-bottom: 0;
     padding-top: 0;
-    width: 704px;
+    width: auto;
+    height: 600px;
+}
+
+.video {
+    width: 700;
     max-width: 85vw;
     min-width: 240px;
-    height: 576px;
 }
 
 /*footer*/
@@ -584,6 +596,11 @@ footer {
 */
 }
 
+#zoom {
+    position: absolute;
+    max-width: 85vw;
+}
+
 /*media queries*/
 
 /*mobile landscape*/
@@ -607,7 +624,7 @@ footer {
     }
 
     .filler2 {
-        height: 56vw;
+        height: 55vw;
     }
 
     a.navn {
@@ -627,6 +644,7 @@ footer {
         visibility: visible;
     }
 
+
     .lag {
         background-color: #294a41;
         width: 100vw;
@@ -637,24 +655,32 @@ footer {
     }
 
     .lag1 {
+
         background-size: 100.7%;
-        background-image: url(assets/home_lag1.png);
         width: 100vw;
         height: 56.6vw;
         top: 0vw;
         position: fixed;
         z-index: -2;
+
+        background-image: url(assets/landscape_lag1.png);
     }
 
     .lag2 {
+
         background-size: 100%;
-        background-image: url(assets/home_lag2.png);
         width: 100vw;
         height: 56.7vw;
         top: 0vw;
         position: absolute;
         z-index: -1;
+
+        top: 3vw;
+        background-image: url(assets/landscape_lag2.png);
     }
+
+
+
 
     .imi_billede {
         height: 0px;
@@ -754,6 +780,16 @@ footer {
         font-size: 3.5em;
     }
     /*redesign slut*/
+    .flex_image {
+        max-width: 42.5vw;
+        margin: -1px;
+        padding: 0;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 /*tablet portrait*/
@@ -812,7 +848,7 @@ footer {
 
     .lag2 {
         background-size: 100%;
-        background-image: url(assets/home_lag2.png);
+        background-image: url(assets/home_lag2_v2.png);
         width: 100vw;
         height: 56.7vw;
         top: 0vw;
@@ -916,6 +952,14 @@ footer {
     /*portfolio slut*/
     /*stilart*/
     /*stilart slut*/
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .flex_image {
+        max-width: 42.5vw;
+    }
 }
 
 /*tablet landscape*/
@@ -1018,7 +1062,12 @@ footer {
     .stilart_tekstboks {
         max-width: 40vw;
     }
-    .stilart_billede img {
+    .stilart_billede {
+        max-width: 40vw;
+        min-width: 240px;
+    }
+
+    #zoom {
         max-width: 40vw;
         min-width: 240px;
     }
@@ -1028,7 +1077,8 @@ footer {
         min-width: 240px;
     }
 
-    video {
+    .video {
+        width: 750px;
         max-width: 40vw;
         min-width: 240px;
     }
@@ -1057,100 +1107,101 @@ footer {
     }
 
     /*stilart slut*/
-}
-
-/*desktop*/
-
-@media only screen and (min-width: 1100px) {
-
-    /*menu*/
-    .filler {
-        height: 6vw;
+    .flex_image {
+        max-width: 20vw;
     }
 
-    .menu_alt {
-        padding-bottom: 0vw;
-        padding-top: 0vw;
-    }
+    /*desktop*/
+    @media only screen and (min-width: 1100px) {
+
+        /*menu*/
+        .filler {
+            height: 6vw;
+        }
+
+        .menu_alt {
+            padding-bottom: 0vw;
+            padding-top: 0vw;
+        }
 
 
-    .filler2 {
-        height: 48vw;
-    }
-    /*menu slut*/
-    /*baggrund*/
-    .lag {
-        background-color: #294a41;
-        width: 100vw;
-        height: 56.6vw;
-        position: fixed;
-        z-index: -3;
-        top: 0vw;
-    }
+        .filler2 {
+            height: 48vw;
+        }
+        /*menu slut*/
+        /*baggrund*/
+        .lag {
+            background-color: #294a41;
+            width: 100vw;
+            height: 56.6vw;
+            position: fixed;
+            z-index: -3;
+            top: 0vw;
+        }
 
-    .lag1 {
-        background-size: 100.7%;
-        background-image: url(assets/home_lag1.png);
-        width: 100vw;
-        height: 56.6vw;
-        top: 0vw;
-        position: fixed;
-        z-index: -2;
-    }
+        .lag1 {
+            background-size: 100.7%;
+            background-image: url(assets/home_lag1.png);
+            width: 100vw;
+            height: 56.6vw;
+            top: 0vw;
+            position: fixed;
+            z-index: -2;
+        }
 
-    .lag2 {
-        background-size: 100%;
-        background-image: url(assets/home_lag2.png);
-        width: 100vw;
-        height: 56.7vw;
-        top: 4vw;
-        position: absolute;
-        z-index: -1;
-    }
+        .lag2 {
+            background-size: 100%;
+            background-image: url(assets/home_lag2_v3.png);
+            width: 100vw;
+            height: 56.7vw;
+            top: 4vw;
+            position: absolute;
+            z-index: -1;
+        }
 
-    /*baggrund slut*/
-    /*portfolio*/
-    .billede1:hover {
-        background-image: url(assets/stilart_pink.jpg);
-    }
+        /*baggrund slut*/
+        /*portfolio*/
+        .billede1:hover {
+            background-image: url(assets/stilart_pink.jpg);
+        }
 
-    .billede2:hover {
-        background-image: url(assets/redesign_pink.jpg);
-    }
+        .billede2:hover {
+            background-image: url(assets/redesign_pink.jpg);
+        }
 
-    .billede3:hover {
-        background-image: url(assets/animation_pink.jpg);
-    }
+        .billede3:hover {
+            background-image: url(assets/animation_pink.jpg);
+        }
 
-    .billede4:hover {
-        background-image: url(assets/sexogsamfund_pink.jpg);
-    }
+        .billede4:hover {
+            background-image: url(assets/sexogsamfund_pink.jpg);
+        }
 
-    .billede5:hover {
-        background-image: url(assets/keaapp_pink.jpg);
-    }
+        .billede5:hover {
+            background-image: url(assets/keaapp_pink.jpg);
+        }
 
-    .billede6:hover {
-        background-image: url(assets/joeapp_pink.jpg);
-    }
+        .billede6:hover {
+            background-image: url(assets/joeapp_pink.jpg);
+        }
 
-    .hovertext:hover {
-        color: white;
-    }
+        .hovertext:hover {
+            color: white;
+        }
 
-    .hovertext {
+        .hovertext {
 
-        margin: 0 auto;
-        padding: 7em;
-        max-width: 17vw;
-        position: relative;
-        z-index: 100;
-        top: -2em;
-        right: -0.5em;
-        font-size: 0.8em;
-        font-weight: 900;
-    }
-    /*
+            margin: 0 auto;
+            padding: 7em;
+            max-width: 17vw;
+            position: relative;
+            z-index: 100;
+            top: -2em;
+            right: -0.5em;
+            font-size: 0.8em;
+            font-weight: 900;
+        }
+        /*
     .a a:hover {
         color: white;
     }
@@ -1160,25 +1211,37 @@ footer {
         height: 200px;
     }
 */
-    .hexagon_graa {
-        visibility: hidden;
-    }
-    .tekstboks {
-        visibility: hidden;
-        height: 0vw;
-    }
+        .hexagon_graa {
+            visibility: hidden;
+        }
+        .tekstboks {
+            visibility: hidden;
+            height: 0vw;
+        }
 
-    .filler4 {
-        height: 65vw;
+        .filler4 {
+            height: 65vw;
+        }
+        /*portfolio slut*/
+        /*stilart*/
+        .stilart_tekstboks {
+            max-width: 40vw;
+        }
+        .stilart_billede {
+            max-width: 40vw;
+            min-width: 240px;
+        }
+
+        #zoom:hover {
+
+            max-width: 65vw;
+            position: absolute;
+            z-index: 100;
+            right: 7.5vw;
+            top: 78vw;
+            border: 1px solid;
+            box-shadow: 5px 10px 8px rgb(48, 48, 48);
+            position: absolute;
+        }
+
     }
-    /*portfolio slut*/
-    /*stilart*/
-    .stilart_tekstboks {
-        max-width: 40vw;
-    }
-    .stilart_billede img {
-        max-width: 40vw;
-        min-width: 240px;
-    }
-    /*stilart slut*/
-}
