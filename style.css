@@ -113,6 +113,10 @@ h3 {
     height: 145vw;
 }
 
+.filler5 {
+    height: 145vw;
+}
+
 .menu_alt {
     visibility: hidden;
     height: 0;
@@ -178,7 +182,7 @@ a {
 }
 
 .lag1 {
-    background-size: 100.7%;
+    background-size: 100%;
     background-image: url(assets/l1.png);
     width: 100%;
     height: 100%;
@@ -195,6 +199,39 @@ a {
     top: 8vw;
     position: absolute;
     z-index: -1;
+}
+
+.about_image {
+    background-size: 100%;
+    background-image: url(assets/about_backgroundimage_mobileportrait.jpg);
+    width: 100vw;
+    height: 177.87vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: 0;
+}
+
+.about_green {
+    width: 100vw;
+    height: 177.87vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    background-color: rgba(212, 219, 217, 0.27);
+}
+
+.about_tekstboks {
+    /*    position: relative;*/
+    max-width: 85vw;
+    /*    background-color: rgba(218, 163, 158, 0.6);*/
+    margin-bottom: 15vw;
+}
+
+.about_tekstboks h2 {
+    color: rgb(218, 163, 158);
+    padding: 0;
+    padding-top: 10vw;
 }
 
 /*hamburgermenu*/
@@ -530,6 +567,11 @@ li {
     text-decoration: underline;
 }
 
+.about_link {
+    color: white;
+    text-decoration: underline;
+}
+
 .stilart_tekstboks a {
     color: rgb(212, 129, 123);
     text-decoration: underline;
@@ -603,7 +645,185 @@ footer {
 
 /*media queries*/
 
-/*mobile landscape*/
+@media only screen and (min-width: 594px) {
+    /*menu*/
+    .filler {
+        height: 6vw;
+    }
+
+    .menu_alt {
+        background-color: rgb(255, 255, 255);
+        position: sticky;
+        width: 100%;
+        z-index: 20;
+        top: 0;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
+        visibility: visible;
+        height: auto;
+    }
+
+    .filler2 {
+        height: 115vw;
+    }
+
+    a.navn {
+        font-size: 2.5em;
+        font-weight: 900;
+        margin-left: 0vw;
+    }
+    /*menu slut*/
+    /*baggrund*/
+    .lag {
+        background-color: #294a41;
+        width: 100vw;
+        height: 178vw;
+        position: fixed;
+        z-index: -3;
+        top: 0vw;
+    }
+
+    .lag1 {
+        background-size: 100%;
+        background-image: url(assets/l1.png);
+        width: 100%;
+        height: 100%;
+        top: 0vw;
+        position: fixed;
+        z-index: -2;
+    }
+
+    .lag2 {
+        background-size: 100%;
+        background-image: url(assets/l2.png);
+        width: 100vw;
+        height: 167vw;
+        top: 8vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .about_tekstboks {
+        position: absolute;
+        max-width: 38vw;
+        background-color: rgba(218, 163, 158, 0.6);
+        top: 22vw;
+        left: 49vw;
+        margin-bottom: 0vw;
+        padding: 0 3vw 2vw;
+    }
+
+    .about_tekstboks h2 {
+        color: white;
+        padding: 0;
+        margin-bottom: 1vw;
+    }
+
+    .about_image {
+        background-image: url(assets/about_backgroundimage_tabletportrait.jpg);
+        height: 133.33vw;
+    }
+
+    .about_green {
+        height: 133.33vw;
+    }
+
+    .filler5 {
+        height: 117vw;
+    }
+
+    /*baggrund slut*/
+    /*hamburgermenu*/
+    header {
+        visibility: hidden;
+        height: 0;
+    }
+
+    /*hamburgermenu slut*/
+    /*portfolio*/
+    .hexagon1 {
+        position: absolute;
+        top: 23vw;
+        left: 20vw;
+        z-index: 3;
+    }
+
+    #tekstboks1 {
+        top: 44vw;
+        left: 8vw;
+    }
+
+    .hexagon2 {
+        position: absolute;
+        top: 34vw;
+        left: 39vw;
+        z-index: 3;
+    }
+
+    #tekstboks2 {
+        top: 55vw;
+        left: 8vw;
+    }
+
+    .hexagon3 {
+        position: absolute;
+        top: 45vw;
+        left: 20vw;
+    }
+
+    #tekstboks3 {
+        top: 66vw;
+        left: 8vw;
+    }
+
+    .hexagon4 {
+        position: absolute;
+        top: 57vw;
+        left: 1vw;
+    }
+
+    #tekstboks4 {
+        top: 77vw;
+        left: 8vw;
+    }
+
+    .hexagon5 {
+        position: absolute;
+        top: 56vw;
+        left: 39vw;
+    }
+
+    #tekstboks5 {
+        top: 77vw;
+        left: 8vw;
+    }
+
+    .hexagon6 {
+        position: absolute;
+        top: 45vw;
+        left: 58vw;
+    }
+
+    #tekstboks6 {
+        top: 66vw;
+        left: 8vw;
+    }
+
+    .filler4 {
+        height: 70vw;
+    }
+    /*portfolio slut*/
+    /*stilart*/
+    /*stilart slut*/
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .flex_image {
+        max-width: 42.5vw;
+    }
+}
 
 @media only screen and (min-width: 594px) and (orientation: landscape) {
     /*menu*/
@@ -671,7 +891,7 @@ footer {
         background-size: 100%;
         width: 100vw;
         height: 56.7vw;
-        top: 0vw;
+        top: 3vw;
         position: absolute;
         z-index: -1;
 
@@ -681,10 +901,43 @@ footer {
 
 
 
+    .about_tekstboks {
+        position: absolute;
+        max-width: 46vw;
+        background-color: rgba(218, 163, 158, 0.6);
+        top: 12vw;
+        left: 42vw;
+        margin-bottom: 0vw;
+        padding: 0 3vw 2vw;
+    }
 
-    .imi_billede {
-        height: 0px;
-        visibility: hidden;
+    .about_tekstboks h2 {
+        color: white;
+        padding: 0;
+        margin-bottom: 1vw;
+    }
+
+    .about_image {
+        background-size: 100%;
+        background-image: url(assets/about_backgroundimage_mobilelandscape_v2.jpg);
+        width: 100vw;
+        height: 56.22vw;
+        position: absolute;
+        top: 0vw;
+        left: 0vw;
+    }
+
+    .about_green {
+        width: 100vw;
+        height: 56.22vw;
+        position: absolute;
+        top: 0vw;
+        left: 0vw;
+        background-color: rgba(212, 219, 217, 0.27);
+    }
+
+    .filler5 {
+        height: 46vw;
     }
     /*baggrund slut*/
     /*hamburgermenu*/
@@ -792,7 +1045,6 @@ footer {
     }
 }
 
-/*tablet portrait*/
 
 @media only screen and (min-width: 594px) and (orientation: portrait) {
     /*menu*/
@@ -813,7 +1065,7 @@ footer {
     }
 
     .filler2 {
-        height: 56vw;
+        height: 115vw;
     }
 
     a.navn {
@@ -823,14 +1075,10 @@ footer {
     }
     /*menu slut*/
     /*baggrund*/
-    .baggrund {
-        visibility: visible;
-    }
-
     .lag {
         background-color: #294a41;
         width: 100vw;
-        height: 56.6vw;
+        height: 133.33vw;
         position: fixed;
         z-index: -3;
         top: 0vw;
@@ -838,9 +1086,9 @@ footer {
 
     .lag1 {
         background-size: 100.7%;
-        background-image: url(assets/home_lag1.png);
+        background-image: url(assets/tablet_portrait_lag1.png);
         width: 100vw;
-        height: 56.6vw;
+        height: 133.33vw;
         top: 0vw;
         position: fixed;
         z-index: -2;
@@ -848,16 +1096,41 @@ footer {
 
     .lag2 {
         background-size: 100%;
-        background-image: url(assets/home_lag2_v2.png);
+        background-image: url(assets/tablet_portrait_lag2.png);
         width: 100vw;
-        height: 56.7vw;
+        height: 133.33vw;
         top: 0vw;
         position: absolute;
         z-index: -1;
     }
-    .imi_billede {
-        height: 0px;
-        visibility: hidden;
+
+    .about_tekstboks {
+        position: absolute;
+        max-width: 38vw;
+        background-color: rgba(218, 163, 158, 0.6);
+        top: 22vw;
+        left: 49vw;
+        margin-bottom: 0vw;
+        padding: 0 3vw 2vw;
+    }
+
+    .about_tekstboks h2 {
+        color: white;
+        padding: 0;
+        margin-bottom: 1vw;
+    }
+
+    .about_image {
+        background-image: url(assets/about_backgroundimage_tabletportrait.jpg);
+        height: 133.33vw;
+    }
+
+    .about_green {
+        height: 133.33vw;
+    }
+
+    .filler5 {
+        height: 117vw;
     }
 
     /*baggrund slut*/
@@ -947,7 +1220,7 @@ footer {
     }
 
     .filler4 {
-        height: 10vw;
+        height: 50vw;
     }
     /*portfolio slut*/
     /*stilart*/
@@ -964,7 +1237,7 @@ footer {
 
 /*tablet landscape*/
 
-@media only screen and (min-width: 850px) and (orientation: landscape) {
+@media only screen and (min-width: 850px) {
 
     /*menu*/
     .menu_alt {
@@ -982,80 +1255,144 @@ footer {
     }
 
     .filler2 {
-        height: 48vw;
+        height: 70vw;
     }
 
     /*menu slut*/
+    .lag {
+        background-color: #294a41;
+        width: 100vw;
+        height: 75vw;
+        position: fixed;
+        z-index: -3;
+        top: 0vw;
+    }
+
+    .lag1 {
+
+        background-size: 100.7%;
+        width: 100vw;
+        height: 75vw;
+        top: 0vw;
+        position: fixed;
+        z-index: -2;
+
+        background-image: url(assets/tablet_landscape_lag1.png);
+    }
+
+    .lag2 {
+
+        background-size: 100%;
+        width: 100vw;
+        height: 75vw;
+        position: absolute;
+        z-index: -1;
+
+        top: 6vw;
+        background-image: url(assets/tablet_landscape_lag2.png);
+    }
+
+
+    .about_tekstboks {
+        position: absolute;
+        max-width: 38vw;
+        background-color: rgba(218, 163, 158, 0.6);
+        top: 22vw;
+        left: 49vw;
+        margin-bottom: 0vw;
+        padding: 0 3vw 2vw;
+    }
+
+    .about_tekstboks h2 {
+        color: white;
+        padding: 0;
+        margin-bottom: 1vw;
+    }
+
+    .about_image {
+        background-image: url(assets/about_backgroundimage_tabletlandscape.jpg);
+        height: 75vw;
+    }
+
+    .about_green {
+        height: 75vw;
+    }
+
+    .filler5 {
+        height: 63vw;
+    }
+
     /*portfolio*/
     .hexagon1 {
         position: absolute;
-        top: 14vw;
+        top: 18vw;
         left: 20vw;
         z-index: 3;
     }
 
     #tekstboks1 {
-        top: 35vw;
+        top: 39vw;
         left: 8vw;
     }
 
     .hexagon2 {
         position: absolute;
-        top: 25vw;
+        top: 29vw;
         left: 39vw;
         z-index: 3;
     }
 
     #tekstboks2 {
-        top: 46vw;
+        top: 50vw;
         left: 8vw;
     }
 
     .hexagon3 {
         position: absolute;
-        top: 36vw;
+        top: 40vw;
         left: 20vw;
     }
 
     #tekstboks3 {
-        top: 57vw;
+        top: 61vw;
         left: 8vw;
     }
 
     .hexagon4 {
         position: absolute;
-        top: 47vw;
+        top: 51vw;
         left: 1vw;
     }
 
     #tekstboks4 {
-        top: 68vw;
+        top: 72vw;
         left: 8vw;
     }
 
     .hexagon5 {
         position: absolute;
-        top: 47vw;
+        top: 51vw;
         left: 39vw;
     }
 
     #tekstboks5 {
-        top: 68vw;
+        top: 72vw;
         left: 8vw;
     }
 
     .hexagon6 {
         position: absolute;
-        top: 36vw;
+        top: 40vw;
         left: 58vw;
     }
 
     #tekstboks6 {
-        top: 57vw;
+        top: 61vw;
         left: 8vw;
     }
+
     .filler4 {
-        height: 80vw;
+        height: 70vw;
     }
     /*portfolio slut*/
     /*stilart*/
@@ -1111,116 +1448,163 @@ footer {
         max-width: 20vw;
     }
 
-    /*desktop*/
-    @media only screen and (min-width: 1100px) {
+
+    @media only screen and (min-width: 850px) and (orientation: landscape) {
 
         /*menu*/
-        .filler {
-            height: 6vw;
-        }
-
         .menu_alt {
             padding-bottom: 0vw;
             padding-top: 0vw;
         }
+        .filler {
+            height: 5vw;
+            background-color: transparent;
+        }
 
+        a.navn {
+            font-size: 2.5em;
+            font-weight: 900;
+        }
 
         .filler2 {
-            height: 48vw;
+            height: 70vw;
         }
+
         /*menu slut*/
-        /*baggrund*/
         .lag {
             background-color: #294a41;
             width: 100vw;
-            height: 56.6vw;
+            height: 75vw;
             position: fixed;
             z-index: -3;
             top: 0vw;
         }
 
         .lag1 {
+
             background-size: 100.7%;
-            background-image: url(assets/home_lag1.png);
             width: 100vw;
-            height: 56.6vw;
+            height: 75vw;
             top: 0vw;
             position: fixed;
             z-index: -2;
+
+            background-image: url(assets/tablet_landscape_lag1.png);
         }
 
         .lag2 {
+
             background-size: 100%;
-            background-image: url(assets/home_lag2_v3.png);
             width: 100vw;
-            height: 56.7vw;
-            top: 4vw;
+            height: 75vw;
             position: absolute;
             z-index: -1;
+
+            top: 6vw;
+            background-image: url(assets/tablet_landscape_lag2.png);
         }
 
-        /*baggrund slut*/
-        /*portfolio*/
-        .billede1:hover {
-            background-image: url(assets/stilart_pink.jpg);
+
+        .about_tekstboks {
+            position: absolute;
+            max-width: 38vw;
+            background-color: rgba(218, 163, 158, 0.6);
+            top: 22vw;
+            left: 49vw;
+            margin-bottom: 0vw;
+            padding: 0 3vw 2vw;
         }
 
-        .billede2:hover {
-            background-image: url(assets/redesign_pink.jpg);
-        }
-
-        .billede3:hover {
-            background-image: url(assets/animation_pink.jpg);
-        }
-
-        .billede4:hover {
-            background-image: url(assets/sexogsamfund_pink.jpg);
-        }
-
-        .billede5:hover {
-            background-image: url(assets/keaapp_pink.jpg);
-        }
-
-        .billede6:hover {
-            background-image: url(assets/joeapp_pink.jpg);
-        }
-
-        .hovertext:hover {
+        .about_tekstboks h2 {
             color: white;
+            padding: 0;
+            margin-bottom: 1vw;
         }
 
-        .hovertext {
+        .about_image {
+            background-image: url(assets/about_backgroundimage_tabletlandscape.jpg);
+            height: 75vw;
+        }
 
-            margin: 0 auto;
-            padding: 7em;
-            max-width: 17vw;
-            position: relative;
-            z-index: 100;
-            top: -2em;
-            right: -0.5em;
-            font-size: 0.8em;
-            font-weight: 900;
+        .about_green {
+            height: 75vw;
         }
-        /*
-    .a a:hover {
-        color: white;
-    }
-    .a a {
-        font-size: 1em;
-        width: 200px;
-        height: 200px;
-    }
-*/
-        .hexagon_graa {
-            visibility: hidden;
+
+        .filler5 {
+            height: 63vw;
         }
-        .tekstboks {
-            visibility: hidden;
-            height: 0vw;
+
+        /*portfolio*/
+        .hexagon1 {
+            position: absolute;
+            top: 18vw;
+            left: 20vw;
+            z-index: 3;
+        }
+
+        #tekstboks1 {
+            top: 39vw;
+            left: 8vw;
+        }
+
+        .hexagon2 {
+            position: absolute;
+            top: 29vw;
+            left: 39vw;
+            z-index: 3;
+        }
+
+        #tekstboks2 {
+            top: 50vw;
+            left: 8vw;
+        }
+
+        .hexagon3 {
+            position: absolute;
+            top: 40vw;
+            left: 20vw;
+        }
+
+        #tekstboks3 {
+            top: 61vw;
+            left: 8vw;
+        }
+
+        .hexagon4 {
+            position: absolute;
+            top: 51vw;
+            left: 1vw;
+        }
+
+        #tekstboks4 {
+            top: 72vw;
+            left: 8vw;
+        }
+
+        .hexagon5 {
+            position: absolute;
+            top: 51vw;
+            left: 39vw;
+        }
+
+        #tekstboks5 {
+            top: 72vw;
+            left: 8vw;
+        }
+
+        .hexagon6 {
+            position: absolute;
+            top: 40vw;
+            left: 58vw;
+        }
+
+        #tekstboks6 {
+            top: 61vw;
+            left: 8vw;
         }
 
         .filler4 {
-            height: 65vw;
+            height: 70vw;
         }
         /*portfolio slut*/
         /*stilart*/
@@ -1232,16 +1616,203 @@ footer {
             min-width: 240px;
         }
 
-        #zoom:hover {
-
-            max-width: 65vw;
-            position: absolute;
-            z-index: 100;
-            right: 7.5vw;
-            top: 78vw;
-            border: 1px solid;
-            box-shadow: 5px 10px 8px rgb(48, 48, 48);
-            position: absolute;
+        #zoom {
+            max-width: 40vw;
+            min-width: 240px;
         }
 
+        .hs-responsive-embed-youtube {
+            max-width: 40vw;
+            min-width: 240px;
+        }
+
+        .video {
+            width: 750px;
+            max-width: 40vw;
+            min-width: 240px;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        .left {
+            margin-right: 5vw;
+        }
+
+        .right {
+            margin-left: 5vw;
+        }
+        .container {
+            margin-top: 0vw;
+        }
+
+        .margin_bottom {
+            margin-bottom: 10vw;
+        }
+
+        .link {
+            max-width: 40vw;
+        }
+
+        /*stilart slut*/
+        .flex_image {
+            max-width: 20vw;
+        }
+
+
+        /*desktop*/
+        @media only screen and (min-width: 1100px) {
+
+            /*menu*/
+            .filler {
+                height: 6vw;
+            }
+
+            .menu_alt {
+                padding-bottom: 0vw;
+                padding-top: 0vw;
+            }
+
+
+            .filler2 {
+                height: 48vw;
+            }
+            /*menu slut*/
+            /*baggrund*/
+            .lag {
+                background-color: #294a41;
+                width: 100vw;
+                height: 56.6vw;
+                position: fixed;
+                z-index: -3;
+                top: 0vw;
+            }
+
+            .lag1 {
+                background-size: 100.7%;
+                background-image: url(assets/home_lag1.png);
+                width: 100vw;
+                height: 56.6vw;
+                top: 0vw;
+                position: fixed;
+                z-index: -2;
+            }
+
+            .lag2 {
+                background-size: 100%;
+                background-image: url(assets/home_lag2_v3.png);
+                width: 100vw;
+                height: 56.7vw;
+                top: 4vw;
+                position: absolute;
+                z-index: -1;
+            }
+
+            /*baggrund slut*/
+            /*portfolio*/
+            .billede1:hover {
+                background-image: url(assets/stilart_pink.jpg);
+            }
+
+            .billede2:hover {
+                background-image: url(assets/redesign_pink.jpg);
+            }
+
+            .billede3:hover {
+                background-image: url(assets/animation_pink.jpg);
+            }
+
+            .billede4:hover {
+                background-image: url(assets/sexogsamfund_pink.jpg);
+            }
+
+            .billede5:hover {
+                background-image: url(assets/keaapp_pink.jpg);
+            }
+
+            .billede6:hover {
+                background-image: url(assets/joeapp_pink.jpg);
+            }
+
+            .hovertext:hover {
+                color: white;
+            }
+
+            .hovertext {
+
+                margin: 0 auto;
+                padding: 7em;
+                max-width: 17vw;
+                position: relative;
+                z-index: 100;
+                top: -2em;
+                right: -0.5em;
+                font-size: 0.8em;
+                font-weight: 900;
+            }
+            /*
+    .a a:hover {
+        color: white;
     }
+    .a a {
+        font-size: 1em;
+        width: 200px;
+        height: 200px;
+    }
+*/
+            .hexagon_graa {
+                visibility: hidden;
+            }
+            .tekstboks {
+                visibility: hidden;
+                height: 0vw;
+            }
+
+            .filler4 {
+                height: 65vw;
+            }
+            /*portfolio slut*/
+            /*stilart*/
+            .stilart_tekstboks {
+                max-width: 40vw;
+            }
+            .stilart_billede {
+                max-width: 40vw;
+                min-width: 240px;
+            }
+
+            #zoom:hover {
+
+                max-width: 65vw;
+                position: absolute;
+                z-index: 100;
+                right: 7.5vw;
+                top: 78vw;
+                border: 1px solid;
+                box-shadow: 5px 10px 8px rgb(48, 48, 48);
+                position: absolute;
+            }
+
+            .about_image {
+                background-image: url(assets/about_backgroundimage_desktop.jpg);
+                height: 56.25vw;
+            }
+
+            .about_green {
+                height: 56.25vw;
+
+            }
+
+            .about_tekstboks {
+                position: absolute;
+                top: 20vw;
+                max-width: 38vw;
+                background-color: rgba(218, 163, 158, 0.6);
+            }
+
+            .filler5 {
+                height: 44vw;
+            }
+
+        }
